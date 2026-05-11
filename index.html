@@ -3,10 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 - Arthur</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals home page for Arthur Dias. Course landing page with personal information, web development resources, and dynamic JavaScript dates.">
+  <meta name="author" content="Arthur Dias">
+  <title>WDD 131 – Dynamic Web Fundamentals – Arthur Dias</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-  <h1>WDD 131 - Arthur</h1>
-  <p>This is my WDD 131 course home page.</p>
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+
+    <nav>
+      <a href="https://www.linkedin.com/in/arthurmoroni/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Arthur Dias</h1>
+
+    <section class="card about-card">
+      <h2>About Me</h2>
+
+      <div class="about-content">
+        <p>
+          My name is Arthur Dias. I live in Portugal and I am studying Software Development through BYU-Idaho.
+          I am currently learning web development, programming, databases, and quality assurance. My goal is to
+          keep improving my technical skills and build a strong portfolio for future opportunities in technology.
+        </p>
+
+        <img src="images/profile.jpg" alt="Arthur Dias, a young professional man wearing a dark suit with a burgundy tie, smiling confidently. He is positioned near large windows with blue sky and greenery visible in the background, creating a bright, professional setting that conveys approachability and competence.">
+      </div>
+
+      <h3>Portugal</h3>
+
+      <div class="country-content">
+        <figure>
+          <img src="images/portugal-flag.jpeg" alt="Flag of Portugal">
+          <figcaption>Official flag of Portugal</figcaption>
+        </figure>
+
+        <p>
+          Portugal is a country in southwestern Europe, known for its history, culture, coastline, and beautiful
+          cities such as Porto and Lisbon. It is also a great place to study, work, and connect with people from
+          different backgrounds.
+        </p>
+      </div>
+    </section>
+
+    <section class="card resources-card">
+      <h2>Web Dev Resources</h2>
+
+      <ul>
+        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy;<span id="currentyear"></span> 🐺 Arthur Dias 🐺 Portugal
+    </p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>
