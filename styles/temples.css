@@ -40,7 +40,7 @@ header {
   content: "✕";
 }
 
-.navigation {
+nav {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
@@ -48,11 +48,11 @@ header {
   overflow: hidden;
 }
 
-.navigation.open {
+nav.open {
   max-height: 300px;
 }
 
-.navigation a {
+nav a {
   display: block;
   color: #ffffff;
   text-decoration: none;
@@ -60,7 +60,7 @@ header {
   text-align: center;
 }
 
-.navigation a:hover {
+nav a:hover {
   background-color: #455a64;
   color: #ffffff;
 }
