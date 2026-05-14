@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  color: #222222;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #263238;
+  color: #ffffff;
+  padding: 1rem;
+  position: relative;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#menu {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✕";
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #455a64;
+  color: #ffffff;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #263238;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #263238;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+footer p {
+  margin: 0.3rem;
+}
+
+#lastModified {
+  color: #ffd54f;
+}
