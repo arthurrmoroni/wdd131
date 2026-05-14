@@ -10,9 +10,10 @@
   }
 
   .navigation {
-    display: flex;
     flex-direction: row;
     margin-top: 0;
+    max-height: none;
+    overflow: visible;
   }
 
   .navigation a {
