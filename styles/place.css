@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #006639;
+  --secondary-color: #da291c;
+  --accent-color: #facc15;
+  --text-color: #1f2937;
+  --background-color: #f4f7f4;
+  --card-background: rgba(255, 255, 255, 0.92);
+  --border: 1px solid #d1d5db;
+  --shadow: 0 4px 12px rgb(0 0 0 / 20%);
+  --max-width: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 8px solid var(--secondary-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: var(--border);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.weather-icon {
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 0.75rem;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+dl div {
+  display: contents;
+}
+
+dt {
+  font-weight: 700;
+  text-align: right;
+}
+
+dd {
+  margin: 0;
+  text-align: left;
+}
+
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 8px solid var(--secondary-color);
+}
+
+footer p {
+  margin: 0.3rem;
+}
+
+#lastModified {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    position: absolute;
+    width: 280px;
+    background-color: var(--card-background);
+    box-shadow: var(--shadow);
+    border: var(--border);
+    padding: 1rem;
+  }
+
+  .card h2 {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.75rem;
+    margin: -0.4rem 0 1rem -1.8rem;
+    text-align: left;
+  }
+
+  .data {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  .weather {
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
