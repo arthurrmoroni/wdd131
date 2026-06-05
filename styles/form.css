@@ -6,6 +6,10 @@
   --card-color: #ffffff;
   --text-color: #222222;
   --border-color: #cccccc;
+  --danger-color: #b91c1c;
+  --star-color: #b45309;
+  --hint-color: #555555;
+  --shadow-color: #00000026;
 }
 
 * {
@@ -42,7 +46,7 @@ form,
   padding: 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 8px;
-  box-shadow: 0 2px 8px #00000026;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 label,
@@ -53,7 +57,7 @@ legend {
 }
 
 .required {
-  color: #b91c1c;
+  color: var(--danger-color);
 }
 
 input,
@@ -92,7 +96,7 @@ fieldset {
 }
 
 .rating span {
-  color: #b45309;
+  color: var(--star-color);
   font-size: 1.1rem;
 }
 
@@ -116,7 +120,7 @@ fieldset {
 .hint {
   margin: 0.25rem 0 0.75rem;
   font-size: 0.9rem;
-  color: #555555;
+  color: var(--hint-color);
 }
 
 input[type="submit"] {
@@ -175,5 +179,10 @@ footer p {
 
   header h1 {
     font-size: 2.3rem;
+  }
+
+  form,
+  .confirmation {
+    padding: 2rem;
   }
 }
