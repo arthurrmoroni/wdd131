@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Porto Running Guide interest list using an accessible HTML form with localStorage confirmation.">
+  <meta name="author" content="Arthur Dias">
+  <title>Porto Running Guide - Join</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="site-logo">
+        <span class="logo-mark">🏃</span>
+        <span>Porto Running Guide</span>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="contact.html" class="active">Join</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1>Join the Running List</h1>
+    <p>Use this form to save your route interest and receive a simple confirmation. The saved route interest uses localStorage in your browser.</p>
+
+    <section class="form-card">
+      <h2>Runner Interest Form</h2>
+      <p id="savedPreference" class="form-message"></p>
+
+      <form id="interestForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="runner@example.com">
+
+        <label for="route">Route Interest</label>
+        <select id="route" name="route" required>
+          <option value="" disabled selected>Select a route ...</option>
+          <option value="Douro River Easy Run">Douro River Easy Run</option>
+          <option value="City Park Green Loop">City Park Green Loop</option>
+          <option value="Bridge View Challenge">Bridge View Challenge</option>
+        </select>
+
+        <fieldset>
+          <legend>Running Experience</legend>
+          <div class="radio-group">
+            <label><input type="radio" name="experience" value="beginner" required> Beginner</label>
+            <label><input type="radio" name="experience" value="intermediate"> Intermediate</label>
+            <label><input type="radio" name="experience" value="advanced"> Advanced</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <div class="checkbox-group">
+            <label><input type="checkbox" id="newsletter" name="newsletter" value="yes"> Send me route updates</label>
+            <label><input type="checkbox" id="morning" name="morning" value="yes"> I prefer morning runs</label>
+          </div>
+        </fieldset>
+
+        <label for="comments">Questions or goals</label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Tell us what kind of running help you want."></textarea>
+
+        <input type="submit" value="Save My Interest">
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentyear"></span> Arthur Dias | Porto Running Guide</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>

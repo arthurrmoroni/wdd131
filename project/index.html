@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Porto Running Guide home page with local running routes, safety tips, and visitor information for runners in Porto.">
+  <meta name="author" content="Arthur Dias">
+  <title>Porto Running Guide - Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/site.css">
+  <script src="scripts/site.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="site-logo">
+        <span class="logo-mark">🏃</span>
+        <span>Porto Running Guide</span>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="routes.html">Routes</a>
+        <a href="contact.html">Join</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/porto-hero.webp" media="(min-width: 700px)">
+        <img src="images/porto-hero.webp" alt="Illustration of Porto with runners, river, bridge, and city buildings" width="1400" height="700">
+      </picture>
+      <div class="hero-text">
+        <h1>Run Porto with confidence</h1>
+        <p>Find beginner-friendly routes, scenic paths, and practical safety tips for running around Porto.</p>
+        <a class="button-link" href="routes.html">Explore Routes</a>
+      </div>
+    </section>
+
+    <section class="visit-box">
+      <h2>Your Visits</h2>
+      <p>You have visited this guide <strong><span id="visitCount"></span></strong> time(s) from this browser.</p>
+    </section>
+
+    <h2 class="section-title">What this guide offers</h2>
+    <section class="card-grid">
+      <article class="info-card">
+        <h3>Simple Routes</h3>
+        <p>Choose routes based on distance, difficulty, and the type of run you want to complete.</p>
+      </article>
+      <article class="info-card">
+        <h3>Safety Tips</h3>
+        <p>Learn basic preparation tips such as hydration, visibility, and choosing safer paths.</p>
+      </article>
+      <article class="info-card">
+        <h3>Local Focus</h3>
+        <p>The guide is focused on Porto and highlights running ideas around the river, parks, and viewpoints.</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentyear"></span> Arthur Dias | Porto Running Guide</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+</body>
+</html>
